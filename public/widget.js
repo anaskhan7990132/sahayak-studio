@@ -1,0 +1,4 @@
+(function(){
+ const script=document.currentScript;const target=script&&script.getAttribute('data-url');if(!target)return;let url;try{url=new URL(target);if(url.protocol!=='https:'&&url.hostname!=='localhost')return;}catch{return;}
+ const host=document.createElement('div');const shadow=host.attachShadow({mode:'open'});const style=document.createElement('style');style.textContent='button{position:fixed;bottom:24px;right:24px;background:#ed9568;color:#161616;padding:16px 22px;border:0;border-radius:40px;font:600 14px system-ui;box-shadow:0 8px 30px #0003;cursor:pointer;z-index:2147483647}button:hover{background:#ffad83}';const button=document.createElement('button');button.textContent='◖ Talk to '+(script.getAttribute('data-name')||'Sahayak');button.onclick=()=>window.open(url.href,'_blank','noopener,noreferrer');shadow.append(style,button);document.body.append(host);
+})();
