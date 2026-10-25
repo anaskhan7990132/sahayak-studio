@@ -5,7 +5,6 @@ A multilingual voice-agent builder with **Write → Refine → Test → Deploy �
 ## Run on your laptop
 
 Install Node.js 22.13+ (Node 24 LTS recommended), extract this ZIP, and open a terminal inside `Sahayak-Studio`:
-
 ```bash
 npm install
 npm run dev
@@ -58,7 +57,6 @@ This is a functional demo implementation, not an audited production service. Liv
 - Before public rollout, add real authorization to provider routes, per-user quotas, retention/deletion policies, audit logging, and tested human/telephony integrations. The standalone Next.js server has no hosted-platform authentication boundary.
 
 ## Verify and build
-
 ```bash
 npm run typecheck
 npm test
